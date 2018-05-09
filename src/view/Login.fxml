@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="apAnchor" prefHeight="620.0" prefWidth="989.0" stylesheets="@../style/MainStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="535.0" prefWidth="760.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="620.0" prefWidth="726.0">
+               <children>
+                  <AnchorPane fx:id="apDesignPane" prefHeight="464.0" prefWidth="733.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="18.0" text="Bug Tracking System" textFill="#ddcdcc">
+                           <font>
+                              <Font name="System Bold" size="31.0" />
+                           </font>
+                           <effect>
+                              <Reflection bottomOpacity="0.04" fraction="0.6" topOpacity="0.32" />
+                           </effect>
+                        </Label>
+                        <AnchorPane layoutX="381.0" layoutY="52.0" prefHeight="347.0" prefWidth="284.0" style="-fx-background-color: white;">
+                           <children>
+                              <Hyperlink fx:id="hlCreateAccount" layoutX="84.0" layoutY="298.0" onAction="#hlCreateAnAccount" text="Create an account">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Hyperlink>
+                              <Label layoutX="80.0" layoutY="14.0" text="SIGN IN">
+                                 <font>
+                                    <Font name="DejaVu Sans Bold" size="29.0" />
+                                 </font>
+                              </Label>
+                              <GridPane layoutY="83.0" prefHeight="129.0" prefWidth="286.0" vgap="10.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <TextField fx:id="tfUserName" onAction="#pfUserPassOnHitEnter" promptText="User Name" GridPane.columnSpan="2" />
+                                    <PasswordField fx:id="pfUserPassword" onAction="#pfUserNameOnHitEnter" promptText="Password" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+                                    <Button fx:id="btnUserNameTfClear" mnemonicParsing="false" prefHeight="31.0" prefWidth="29.0" stylesheets="@../style/btnOnText.css" GridPane.columnSpan="2" GridPane.halignment="RIGHT" />
+                                    <Button fx:id="btnPassFieldClear" mnemonicParsing="false" prefHeight="31.0" prefWidth="29.0" stylesheets="@../style/btnOnText.css" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+                                    <ComboBox fx:id="cmbUserType" editable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#cmbUserTypeOnSelect" opacity="0.34" prefHeight="33.0" prefWidth="283.0" promptText="UserType" GridPane.rowIndex="2" />
+                                 </children>
+                              </GridPane>
+                              <Button fx:id="btnLogin" layoutX="88.0" layoutY="253.0" mnemonicParsing="false" onAction="#btnLogin" text="Log In" />
+                           </children>
+                        </AnchorPane>
+                        <Text fill="WHITE" layoutX="14.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" wrappingWidth="319.99999513477087">
+                           <font>
+                              <Font name="System Italic" size="16.0" />
+                           </font></Text>
+                        <Text fill="#f5efef" layoutX="14.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" wrappingWidth="319.9999902378768">
+                           <font>
+                              <Font name="System Italic" size="16.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="14.0" layoutY="220.0" text="" textFill="#e8d9d9" />
+                        <Hyperlink id="hl-database" fx:id="hlDatabase" layoutX="487.0" layoutY="401.0" onAction="#hlDbOnAction" text="DB SETUP" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

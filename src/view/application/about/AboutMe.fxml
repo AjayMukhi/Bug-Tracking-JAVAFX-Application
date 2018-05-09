@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="553.0" prefWidth="735.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.application.about.AboutMeController">
+   <children>
+      <VBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="517.0" prefWidth="735.0">
+               <children>
+                  <AnchorPane prefHeight="517.0" prefWidth="689.0">
+                     <children>
+                        <Label layoutX="143.0" layoutY="195.0" prefHeight="43.0" prefWidth="351.0" text="Ajay Kumar Mukhi">
+                           <font>
+                              <Font name="System Bold" size="29.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="145.0" layoutY="237.0" text="Illinois Institute of Technology,Chicago">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="146.0" layoutY="259.0" prefHeight="17.0" prefWidth="100.0" text="Department: ITM" />
+                        <ImageView fx:id="imgMyImg" fitHeight="162.0" fitWidth="153.0" layoutX="145.0" layoutY="33.0" pickOnBounds="true" smooth="false" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

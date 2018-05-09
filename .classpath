@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
+	<classpathentry kind="lib" path="E:/jars/mysql-connector-java-5.1.41-bin.jar"/>
+	<classpathentry kind="lib" path="src/lib/jasperreports-6.2.0.jar"/>
+	<classpathentry kind="lib" path="src/lib/jasperreports-fonts-6.2.0.jar"/>
+	<classpathentry kind="lib" path="src/lib/jasperreports-javaflow-6.2.0.jar"/>
+	<classpathentry kind="lib" path="src/lib/poi-3.13-20150929.jar"/>
+	<classpathentry kind="lib" path="src/lib/poi-examples-3.13-20150929.jar"/>
+	<classpathentry kind="lib" path="src/lib/poi-excelant-3.13-20150929.jar"/>
+	<classpathentry kind="lib" path="src/lib/poi-ooxml-3.13-20150929.jar"/>
+	<classpathentry kind="lib" path="src/lib/poi-ooxml-schemas-3.13-20150929.jar"/>
+	<classpathentry kind="lib" path="src/lib/poi-scratchpad-3.13-20150929.jar"/>
+	<classpathentry kind="lib" path="src/lib/TrayNotification.jar"/>
+	<classpathentry kind="lib" path="src/lib/commons-beanutils-1.9.0.jar"/>
+	<classpathentry kind="lib" path="src/lib/commons-codec-1.5.jar"/>
+	<classpathentry kind="lib" path="src/lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="src/lib/commons-digester-2.1.jar"/>
+	<classpathentry kind="lib" path="src/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="src/lib/core-2.3.0.jar"/>
+	<classpathentry kind="lib" path="src/lib/ecj-4.3.1.jar"/>
+	<classpathentry kind="lib" path="src/lib/groovy-all-2.4.3.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

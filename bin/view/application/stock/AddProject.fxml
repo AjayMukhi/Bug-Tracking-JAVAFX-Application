@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Group stylesheets="@../../../style/PopUp.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.application.project.AddProjectController">
+   <children>
+      <AnchorPane layoutX="12.0" layoutY="3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="662.0" stylesheets="@../../../style/MainStyle.css">
+         <children>
+            <Label fx:id="lblHeader" alignment="CENTER" layoutX="4.0" layoutY="14.0" prefHeight="36.0" prefWidth="601.0" text="ADD PROJECT DETAILS">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <GridPane hgap="1.0" layoutX="12.0" layoutY="69.0" prefHeight="471.0" prefWidth="629.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="102.0" text="Project Id :" />
+                  <Label text="Project Name :" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+                  <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="143.0" text="Project Description :" GridPane.rowIndex="4" />
+                  <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="110.0" text="Delivery Date :" GridPane.rowIndex="6" />
+                  <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="106.0" text="Duration :" GridPane.rowIndex="8" />
+                  <Label minHeight="-Infinity" minWidth="-Infinity" text="Client Name :" GridPane.columnIndex="7" />
+                  <Label minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="104.0" text="Project Manager :" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+                  <TextField fx:id="tfProjectId" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="247.0" GridPane.columnSpan="3" GridPane.rowIndex="1" />
+                  <TextField fx:id="tfProjectName" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="248.0" GridPane.columnSpan="3" GridPane.rowIndex="3" />
+                  <TextField fx:id="tfProjectDescription" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="249.0" GridPane.columnSpan="3" GridPane.rowIndex="5" />
+                  <TextField fx:id="tfDuration" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="249.0" GridPane.columnSpan="3" GridPane.rowIndex="9" />
+                  <Pane GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                  <Pane GridPane.columnIndex="7" GridPane.rowIndex="5" />
+                  <Pane GridPane.columnIndex="7" GridPane.rowIndex="7" />
+                  <Pane GridPane.columnIndex="7" GridPane.rowIndex="9" />
+                  <Button fx:id="btnSave" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="35.0" prefWidth="120.0" text="Save" GridPane.columnIndex="9" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="15" />
+                  <DatePicker fx:id="dpDeliveryDate" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="249.0" GridPane.rowIndex="7" />
+                  <TextField fx:id="tfClientName" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="272.0" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                  <Button fx:id="btnUpdate" mnemonicParsing="false" onAction="#btnUpdateOnAction" text="Update" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="15" />
+                  <TextField fx:id="tfProjectManager" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="272.0" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+            <Button fx:id="btnClose" layoutX="607.0" layoutY="16.0" mnemonicParsing="false" onAction="#btnCloseOnAction" prefHeight="32.0" prefWidth="34.0" stylesheets="@../../../style/btnOnText.css" />
+         </children>
+      </AnchorPane>
+   </children>
+</Group>

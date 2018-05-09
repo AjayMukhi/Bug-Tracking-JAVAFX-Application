@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-04-08T00:52:21 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="BugReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3f3bc799-fe0c-4fc1-b207-c2ac1bee3134">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[select * from 510_lab04.Report]]>
+	</queryString>
+	<field name="ReportID" class="java.lang.String"/>
+	<field name="ReportName" class="java.lang.String"/>
+	<field name="BugName" class="java.lang.String"/>
+	<field name="Severity" class="java.lang.String"/>
+	<field name="ProjectName" class="java.lang.String"/>
+	<field name="RaisedDate" class="java.lang.String"/>
+	<field name="Status" class="java.lang.String"/>
+	<field name="ResolvedDate" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="45" splitType="Stretch">
+			<staticText>
+				<reportElement x="358" y="8" width="69" height="19" uuid="ba50ff7c-ca90-4161-9e6f-cc049873222e"/>
+				<text><![CDATA[RaisedDate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="8" width="36" height="18" uuid="f47289ca-fc57-4935-906e-0f08cbcd6736"/>
+				<text><![CDATA[Status]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="490" y="10" width="68" height="18" uuid="3309f862-2acb-43b8-89d2-78c7ff1e8431"/>
+				<text><![CDATA[ResolvedDate]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="105" splitType="Stretch">
+			<staticText>
+				<reportElement x="-10" y="-36" width="50" height="20" uuid="f64822bf-c47f-4fb5-8cdd-4dd74d448ce9"/>
+				<text><![CDATA[ReportID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="41" y="-36" width="83" height="19" uuid="4d503787-4783-48fe-9efa-41164246b2bc"/>
+				<text><![CDATA[ReportName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="-35" width="61" height="18" uuid="573b4a13-e258-494b-a71b-a94fdd56daff"/>
+				<text><![CDATA[BugName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="-36" width="66" height="19" uuid="1d16b46b-c8a5-479d-ae72-a853a27e84b0"/>
+				<text><![CDATA[Severity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="281" y="-36" width="64" height="18" uuid="6bfde077-669a-4807-addd-fc51ae1ff52f"/>
+				<text><![CDATA[ProjectName]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="-11" y="-89" width="60" height="23" uuid="f87faa30-605c-43b4-b4ff-5d56077089b0"/>
+				<textFieldExpression><![CDATA[$F{ReportID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="50" y="-90" width="80" height="23" uuid="c7b7eadd-e015-4bb3-b70f-52b3dd8ff6ee"/>
+				<textFieldExpression><![CDATA[$F{ReportName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="-88" width="72" height="22" uuid="6bb5a3c5-093d-4548-b127-ba2ea48e14cb"/>
+				<textFieldExpression><![CDATA[$F{BugName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="207" y="-88" width="63" height="22" uuid="551b7906-f0f9-416c-bc17-d7845eeb4657"/>
+				<textFieldExpression><![CDATA[$F{Severity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="273" y="-89" width="83" height="20" uuid="522e583f-f7cf-42ee-a7fd-f8feb7e9e315"/>
+				<textFieldExpression><![CDATA[$F{ProjectName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="356" y="-90" width="72" height="22" uuid="3adf0a4f-2bda-4a79-8561-66afe1547f38"/>
+				<textFieldExpression><![CDATA[$F{RaisedDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="432" y="-91" width="50" height="22" uuid="a323ddc7-010a-4749-930d-1c39667c2460"/>
+				<textFieldExpression><![CDATA[$F{Status}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="485" y="-92" width="86" height="22" uuid="09b5e3d0-d8c0-49e5-b2cf-639034316b83"/>
+				<textFieldExpression><![CDATA[$F{ResolvedDate}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

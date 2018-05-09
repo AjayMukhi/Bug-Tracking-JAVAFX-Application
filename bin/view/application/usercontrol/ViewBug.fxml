@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="spBugContent" prefHeight="580.0" prefWidth="1004.0" stylesheets="@../../../style/MainStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.application.bug.ViewBugController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="494.0" prefWidth="834.0">
+         <children>
+            <BorderPane layoutX="220.0" layoutY="140.0" prefHeight="479.0" prefWidth="639.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <center>
+                  <TableView fx:id="tblViewCurrentBug" editable="true" onMouseClicked="#tblViewCurrentBugOnClick" onScroll="#tblViewCurrentBugOnScroll" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: none; -fx-border-color: none;" tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
+                    <columns>
+                      <TableColumn fx:id="tblClmBugId" prefWidth="100.0" text="Bug ID" />
+                      <TableColumn fx:id="tblClmBugName" prefWidth="103.0" text=" Bug Name" />
+                      <TableColumn fx:id="tblClmBugType" prefWidth="103.0" text=" Bug Type" />
+                        <TableColumn fx:id="tblClmBugLevel" prefWidth="60.0" text="Bug Level" />
+                        <TableColumn fx:id="tblClmSeverity" prefWidth="100.0" text="Severity" />
+                        <TableColumn fx:id="tblClmProjectName" prefWidth="89.0" text="Project Name" />
+                        <TableColumn fx:id="tblClmTesterCode" prefWidth="137.0" text="TesterCode" />
+                        <TableColumn fx:id="tblClmRaisedOn" prefWidth="122.0" text="Raised on" />
+                        <TableColumn fx:id="tblClmDeveloperCode" minWidth="0.0" prefWidth="150.0" text="Developer Code" />
+                        <TableColumn fx:id="tblClmStatus" prefWidth="110.0" text="Status" />
+                        <TableColumn fx:id="tblClmSolution" prefWidth="150.0" text="Post Solution" />                        
+                    </columns>
+                     <contextMenu>
+                        <ContextMenu>
+                          <items>
+                            <!-- <MenuItem fx:id="miSellSelected" mnemonicParsing="false" onAction="#miSellSelectedOnAction" text="Sell It" /> -->
+                          </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </TableView>
+               </center>
+               <bottom>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="66.0" prefWidth="944.0" spacing="20.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="btnAddNew" mnemonicParsing="false" onAction="#btnAddNewOnAction" text="Add New" />
+                        <Button fx:id="btnUpdate" mnemonicParsing="false" onAction="#btnUpdateOnAction" text="Update" />
+                        <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#btnDeleteOnAction" text="Delete" />
+                     </children>
+                     <BorderPane.margin>
+                        <Insets right="20.0" />
+                     </BorderPane.margin>
+                  </HBox>
+               </bottom>
+               <top>
+                  <BorderPane prefHeight="85.0" prefWidth="944.0" BorderPane.alignment="CENTER">
+                     <top>
+                        <HBox alignment="CENTER" prefHeight="44.0" prefWidth="944.0" spacing="10.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <TextField fx:id="tfSearch" onKeyReleased="#tfSearchOnKeyRelese" prefHeight="31.0" prefWidth="608.0" />
+                              <Button fx:id="btnRefresh" mnemonicParsing="false" onAction="#btnRefreshOnACtion" prefHeight="31.0" prefWidth="32.0" />
+                           </children>
+                        </HBox>
+                     </top>
+                     <center>
+                        <AnchorPane fx:id="apCombobox" BorderPane.alignment="CENTER">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="944.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                     </center>
+                  </BorderPane>
+               </top>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets left="30.0" right="30.0" />
+   </padding>
+</StackPane>

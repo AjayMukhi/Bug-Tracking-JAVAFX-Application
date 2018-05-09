@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="spEmployeeContent" prefHeight="580.0" prefWidth="1004.0" stylesheets="@../../../style/MainStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.application.employe.CurrentEmployeeController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="494.0" prefWidth="834.0">
+         <children>
+            <BorderPane layoutX="220.0" layoutY="140.0" prefHeight="479.0" prefWidth="639.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <center>
+                  <TableView fx:id="tblViewCurrentEmployee" editable="true" onMouseClicked="#tblViewCurrentEmployeeOnClick" onScroll="#tblViewCurrentEmployeeOnScroll" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: none; -fx-border-color: none;" tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
+                    <columns>
+                      <TableColumn fx:id="tblClmEmployeeId" prefWidth="100.0" text="ID" />
+                      <TableColumn fx:id="tblClmEmployeeName" prefWidth="103.0" text=" Name" />
+                        <TableColumn fx:id="tblClmGender" prefWidth="60.0" text="Gender" />
+                        <TableColumn fx:id="tblClmDOB" prefWidth="100.0" text="DOB" />
+                        <TableColumn fx:id="tblClmQualification" prefWidth="89.0" text="Qualification" />
+                        <TableColumn fx:id="tblClmAddress" prefWidth="137.0" text="Address" />
+                        <TableColumn fx:id="tblClmContactNo" prefWidth="122.0" text=" Contact No" />
+                        <TableColumn fx:id="tblClmEmailAddress" minWidth="0.0" prefWidth="150.0" text="Email Address" />
+                        <TableColumn fx:id="tblClmDateofJoining" prefWidth="110.0" text="Date of Joining" />
+                        <TableColumn fx:id="tblClmRole" prefWidth="150.0" text="Role" />                        
+                    </columns>
+                     <contextMenu>
+                        <ContextMenu>
+                          <items>
+                            <!-- <MenuItem fx:id="miSellSelected" mnemonicParsing="false" onAction="#miSellSelectedOnAction" text="Sell It" /> -->
+                          </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </TableView>
+               </center>
+               <bottom>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="66.0" prefWidth="944.0" spacing="20.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="btnAddNew" mnemonicParsing="false" onAction="#btnAddNewOnAction" text="Add New" />
+                        <Button fx:id="btnUpdate" mnemonicParsing="false" onAction="#btnUpdateOnAction" text="Update" />
+                        <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#btnDeleteOnAction" text="Delete" />
+                     </children>
+                     <BorderPane.margin>
+                        <Insets right="20.0" />
+                     </BorderPane.margin>
+                  </HBox>
+               </bottom>
+               <top>
+                  <BorderPane prefHeight="85.0" prefWidth="944.0" BorderPane.alignment="CENTER">
+                     <top>
+                        <HBox alignment="CENTER" prefHeight="44.0" prefWidth="944.0" spacing="10.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <TextField fx:id="tfSearch" onKeyReleased="#tfSearchOnKeyRelese" prefHeight="31.0" prefWidth="608.0" />
+                              <Button fx:id="btnRefresh" mnemonicParsing="false" onAction="#btnRefreshOnACtion" prefHeight="31.0" prefWidth="32.0" />
+                           </children>
+                        </HBox>
+                     </top>
+                     <center>
+                        <AnchorPane fx:id="apCombobox" BorderPane.alignment="CENTER">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="944.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                     </center>
+                  </BorderPane>
+               </top>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets left="30.0" right="30.0" />
+   </padding>
+</StackPane>
