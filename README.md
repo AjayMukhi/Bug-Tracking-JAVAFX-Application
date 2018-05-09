@@ -19,3 +19,18 @@ Admin/Manager Home page- The admin and manager would be having same privileges a
 ![alt text](https://github.com/AjayMukhi/Bug-Tracking-JAVAFX-Application/blob/master/Images/Home-Admin.PNG)
 
 
+User Control Management Tab
+Under this panel, there are 4 main functionalities where User can work with.
+Employee tab, Project tab, Department tab, Bug Track tab.
+
+Description:
+1) Admin/Manager: They have the privileges to perform Add/Update/Delete on all the above functionalities.
+Manager will perform the onboarding of user level employees into the project and assigned role to them. Based on the role, Bug can be assigned to Developer employee.
+![alt text](https://github.com/AjayMukhi/Bug-Tracking-JAVAFX-Application/blob/master/Images/UserControl-Admin.PNG)
+
+2) Employee: For Tester and Developer, only the Bug tracking tab is accessible. They can add/update/delete for Bug tracking functionality.
+For all other functionality/tab he can view the records but cannot perform any operation. 
+![alt text](https://github.com/AjayMukhi/Bug-Tracking-JAVAFX-Application/blob/master/Images/UserControl-Employee.PNG)
+
+
+
