@@ -33,4 +33,67 @@ For all other functionality/tab he can view the records but cannot perform any o
 ![alt text](https://github.com/AjayMukhi/Bug-Tracking-JAVAFX-Application/blob/master/Images/UserControl-Employee.PNG)
 
 
+Employee Tab:
+Description: Manager can perform various functions. For example, user level Employee will be added by manager for the project and bug tracking.
+![alt text](https://github.com/AjayMukhi/Bug-Tracking-JAVAFX-Application/blob/master/Images/Add-Employee.PNG)
+
+Manager can Update and Delete the Employee as well.
+![alt text](https://github.com/AjayMukhi/Bug-Tracking-JAVAFX-Application/blob/master/Images/Employee-Added.PNG)
+
+Project tab:
+Description: Manager/admin can add, update and delete the project from user control tab.
+![alt text](https://github.com/AjayMukhi/Bug-Tracking-JAVAFX-Application/blob/master/Images/Project.PNG)
+
+Department tab:
+Manager and Admin will be having the privileges to add/update/delete department.
+![alt text](https://github.com/AjayMukhi/Bug-Tracking-JAVAFX-Application/blob/master/Images/Department.PNG)
+
+Bug Tracking tab:
+Description: Bug Tracking is managed by both Manager and Employee. Both user will have add/update/delete button enabled in the system.
+![alt text](https://github.com/AjayMukhi/Bug-Tracking-JAVAFX-Application/blob/master/Images/BugTrack.PNG)
+
+Report Management
+Description: All the user will have the privileges to access the report management.
+Manager will add/update or delete the report whereas employee can only view the report system. 
+1) For Admin/Manager:
+![alt text](https://github.com/AjayMukhi/Bug-Tracking-JAVAFX-Application/blob/master/Images/Report.PNG)
+2) For Employee:
+![alt text](https://github.com/AjayMukhi/Bug-Tracking-JAVAFX-Application/blob/master/Images/report-emp.PNG)
+
+Report tab
+Report Can be generated on click of print button and xsl icon button.
+Jasper Report Generation: with the help of Jasper api, the report generation has been done in this system and it can be saved into desktop as pdf version. The XSL version report also can be downloaded into the desktop.
+![alt text](https://github.com/AjayMukhi/Bug-Tracking-JAVAFX-Application/blob/master/Images/Report-1.PNG)
+
+User-Employee Management
+Description: Only Admin and Manager will be having the access to the Employee Management tab. Here the manager can edit the profile of the employee and  also set the permission for it.
+![alt text](https://github.com/AjayMukhi/Bug-Tracking-JAVAFX-Application/blob/master/Images/User-Employee.PNG)
+Employee can be added from the option.
+![alt text](https://github.com/AjayMukhi/Bug-Tracking-JAVAFX-Application/blob/master/Images/Add-Employee-1.PNG)
+
+User-Employee Permission: The manager can set the permission for each individual employee. So when the Employee will logged in first time they can access everything. But the Manager will set the permission which ever functionality is required to be provide.
+![alt text](https://github.com/AjayMukhi/Bug-Tracking-JAVAFX-Application/blob/master/Images/User-Permission.PNG)
+
+Setting tab:
+My Account
+Description: In the setting tab, each user will have the privileges to edit or update the account.
+![alt text](https://github.com/AjayMukhi/Bug-Tracking-JAVAFX-Application/blob/master/Images/MyAccount.PNG)
+
+Logout Screen:
+Once the user logout, the user will be redirected to the welcome page.
+![alt text](https://github.com/AjayMukhi/Bug-Tracking-JAVAFX-Application/blob/master/Images/LogOut.PNG)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
