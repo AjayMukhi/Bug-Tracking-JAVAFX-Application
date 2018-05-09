@@ -81,7 +81,7 @@ Description: In the setting tab, each user will have the privileges to edit or u
 
 Logout Screen:
 Once the user logout, the user will be redirected to the welcome page.
-![alt text](https://github.com/AjayMukhi/Bug-Tracking-JAVAFX-Application/blob/master/Images/LogOut.PNG)
+![alt text](https://github.com/AjayMukhi/Bug-Tracking-JAVAFX-Application/blob/master/Images/LogOut.png)
 
 
 
