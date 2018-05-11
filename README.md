@@ -64,6 +64,8 @@ Report tab
 Report Can be generated on click of print button and xsl icon button.
 Jasper Report Generation: with the help of Jasper api, the report generation has been done in this system and it can be saved into desktop as pdf version. The XSL version report also can be downloaded into the desktop.
 ![alt text](https://github.com/AjayMukhi/Bug-Tracking-JAVAFX-Application/blob/master/Images/Report-1.PNG)
+Chart Tab
+![alt text](https://github.com/AjayMukhi/Bug-Tracking-JAVAFX-Application/blob/master/Images/Chart.PNG)
 
 User-Employee Management
 Description: Only Admin and Manager will be having the access to the Employee Management tab. Here the manager can edit the profile of the employee and  also set the permission for it.
